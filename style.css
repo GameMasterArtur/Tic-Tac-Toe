@@ -1,0 +1,66 @@
+.tic-tac-toe #gameboard {
+
+width: 60vmin;
+height: 60vmin;
+display: grid; 
+grid-template-columns: repeat(3,1fr); 
+gap: 0;
+
+}
+
+.tic-tac-toe button {
+
+    width:  20vmin; 
+    height: 20vmin;
+    background: white; 
+    border: 1px solid black; 
+    margin: 0; 
+    font: 0/0 transparent;
+}
+
+.tic-tac-toe  [aria-label="x"] {
+
+    background-image: url('x.gif');
+}
+
+.tic-tac-toe [aria-label="o"] {
+    
+    background-image: url('o.gif');
+
+}
+
+.tic-tac-toe [aria-label="x"], .tic-tac-toe [aria-label="o"] {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#start {
+    margin: 20px auto;
+    display: block;
+    padding: 12px 24px;
+    font-size: 1.5rem;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  #start:hover {
+    background-color: #1976D2;
+  }
+  
+
+  .jump {
+    animation: jump 0.4s ease;
+  }
+  
+  @keyframes jump {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
